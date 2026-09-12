@@ -1,0 +1,79 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ============================================================
+# Large / sensitive image data
+# ============================================================
+*.mrxs
+*.svs
+*.ndpi
+*.scn
+*.tif
+*.tiff
+*.vms
+*.vmu
+*.dcm
+*.png
+*.jpg
+*.jpeg
+*.bmp
+
+# ============================================================
+# Patient-derived annotations / predictions
+# ============================================================
+*.geojson
+*.json
+*.csv
+*.xlsx
+*.xls
+
+# allow selected documentation/config templates
+!configs/*.yaml
+!configs/*.yml
+!configs/*.toml
+!docs/*.md
+!README.md
+!CITATION.cff
+
+# ============================================================
+# Model weights / checkpoints
+# ============================================================
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.h5
+*.pkl
+*.pickle
+
+# ============================================================
+# Local outputs
+# ============================================================
+data/
+models/
+outputs/
+results/
+runtime/
+logs/
+tmp/
+temp/
+
+# ============================================================
+# OS / editor
+# ============================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

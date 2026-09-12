@@ -1,0 +1,30 @@
+# Example configuration file.
+# Replace all paths with local paths before running the pipeline.
+# Do not commit patient-level data, whole-slide images, annotations, predictions, or model weights.
+
+paths:
+  he_wsi_dir: "/path/to/he_wsi_files"
+  oct_wsi_dir: "/path/to/oct3_4_wsi_files"
+
+  he_roi_geojson_dir: "/path/to/he_roi_geojson_files"
+  oct_roi_geojson_dir: "/path/to/oct_roi_geojson_files"
+
+  tubule_model_path: "/path/to/tubule_model.pth"
+  spermatid_model_path: "/path/to/spermatid_model.pth"
+
+  output_dir: "/path/to/output_directory"
+
+pipeline:
+  he_level: 1
+  oct_level: 0
+
+  he_patch_size: 600
+  oct_tile_size: 224
+  oct_tile_stride: 224
+
+  min_tissue_fraction: 0.10
+  min_tubule_area_um2: 6000
+  spermatid_threshold_per_tubule: 2
+
+runtime:
+  device: "cuda"
